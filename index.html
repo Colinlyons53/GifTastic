@@ -43,44 +43,6 @@
 
     <!-- Optional JavaScript -->
 <script>
-    
-    var gotGifs = [];
-
-    funtion renderButtons() {
-
-        $("#displayButtons").empty();
-
-       for (var i = 0; i < gotGifs.length; i++) {
-
-            var a = $("<button>");
-            
-            a.addClass("gif");
-
-            a.attr("dataName", gotGifs[i]);
-
-            a.text(movies[i]);
-
-            $("#displayButtons").append(a);
-    
-       }
-
-    };
-
-    $("#addMovie").on("click", function (event) {
-
-        event.preventDefault();
-
-        var gotGifs = $("#movieInput").val().trim();
-
-        gotGifs.push(gotGifs);
-
-        renderButtons();
-
-    });
-
-    renderButtons();
-
-
 
 
 </script>
